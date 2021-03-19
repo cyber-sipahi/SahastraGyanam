@@ -12,7 +12,7 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="My_Audio();">
+<body onload="myFunction();">
 <header class="head-top">
 <div class="container-fluid px-0">
     <div class="logo d-flex justify-content-center">
@@ -209,7 +209,7 @@
   <div class="container">
     <p>All Rights Reserved &copy <span id="year"></span></p>
   </div>
-  <div class="">
+  <div class="Audio" style="display: none;">
     <audio id="myAudio" controls autoplay>
   
   <source src="img/bgSound.mp3" type="audio/mpeg">
@@ -224,8 +224,9 @@
 
 <script>
 function myFunction() {
-  var x = document.getElementById("myAudio").autoplay;
-  document.getElementById("demo").innerHTML = x;
+  var x = document.getElementById("myAudio");
+  x.autoplay = true;
+
 }
 </script>
   </div>
