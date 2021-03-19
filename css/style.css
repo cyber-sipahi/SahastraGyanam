@@ -187,14 +187,14 @@ color:#f2efef;
 .view-btn .btn
 {
 	display: block;
-	border: 1px solid bisque;
+	border: 1px solid;
 	border-radius: 0;
 	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 12pt;
 	letter-spacing: 1px;
-	color: #f2efef;
+	color: #FFF;
 }
 .parents
 {
