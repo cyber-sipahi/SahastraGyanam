@@ -12,7 +12,7 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="myFunction();">
+<body onclick="myFunction();">
 <header class="head-top">
 <div class="container-fluid px-0">
     <div class="logo d-flex justify-content-center">
@@ -211,7 +211,7 @@
   </div>
   <div class="Audio" style="display: none;">
     
-   <iframe src="img/bgSound.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+   <iframe src="img/bgSound.mp3" type="audio/mp3" id="audio" style="display:none"></iframe>
 
   </div>
 </section>
@@ -220,7 +220,13 @@
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
-
+<script type="text/javascript">
+  function myFunction()
+  {
+    var x = document.getElementById("audio");
+    x.play();
+  } 
+</script>
     <!-- Java Script-->
 </body>
 </html>
