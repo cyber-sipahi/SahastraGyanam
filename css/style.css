@@ -340,14 +340,17 @@ font-size:15pt;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	overflow: scroll;
+	overflow: auto;
+	transition: 0.5s ease-in;
 }
 .pop-up-over .bg-banner
 {
 	display: block;
+	position: relative;
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/saraswati.jpg);
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(247, 142, 61,0.4) 0%, rgba(249, 83, 37,0.7) 38%, rgba(219, 52, 6, 0.7) 100%), url(../img/saraswati.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position:top center;
@@ -359,22 +362,58 @@ font-size:15pt;
 font-family: 'Bebas Neue', cursive;
 font-stretch: expanded;
 font-size: 2.5em;	
+color: #EEE;
+text-shadow:0 2px 3px black;	
 }
 .pop-up-over .bg-banner .container p
 {
 font-family: 'Roboto Slab', serif;
-	font-size: 1.5em;
+font-size: 1.5em;
+color:#EEE;
+text-shadow:0 2px 3px black;
 }
 .pop-up-over .bg-banner .container ul
 {
-	display: block;
-	
+display: block;
 }
 .pop-up-over .bg-banner .container ul li
 {
 	font-family: 'Roboto Slab', serif;
 	line-height: 35px;
+	color:#f9f9f9;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
+.pop-up-over .container .logo h1
+{
+	color: aliceblue;
+	line-height: 55px;
+}
+.pop-up-over .container .goto_Web
+{
+	padding:15px 15px;
+	margin-top:20px;
+	width: 100%;
+	border-radius:10px;
+	background:#f76009;
+	outline: none;
+	border:none;
+	color:#EEE;
+	font-family: 'Arial', serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.7);
+	text-shadow: -1px 1px 2px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+
+
 @media(max-width:700px)
 {
 .banner .img-banner .banner-text

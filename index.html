@@ -205,7 +205,7 @@
     </div>
    </div>
 </section>
-<section class="pop-up-over bg-primary">
+<section class="pop-up-over bg-danger" id="overlay">
 <div class="container">
   <div class="logo d-flex justify-content-center">
         <img src="img/logo.png" class="img-fluid">
@@ -216,27 +216,36 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-4">
       <h3>All Your Vedic Education</h3>
       <p>for kids at One Place.</p>
 
       <ul>
-        <li>Shloks Learning.</li>
-        <li>Mantras Learning.</li>
+        <li>Shloks & Mantras Learning.</li>
         <li>Meditation.</li>
         <li>Brain Improvment.</li>
-        <li>Moral Development.</li>
-        <li>Spiritual Development.</li>
-        <li>Moral Learning from Ramayan.</li>
-        <li>Moral Learning from Mahabharat.</li>
+        <li>Moral Development from Ramayan and Mahabharat.</li>
+        
       </ul>
     </div>
+    
     <div class="col-md-4">
-      
+    <h3>Other Courses</h3>
+     <ul>
+        <li>Vedic Maths</li>
+        <li>Rubic Cube.</li>
+        
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Online Classes</h3>
+      <p>for All Courses.</p>
+      <img src="img/online-classes.png" class="img-fluid">
     </div>
   </div>
   <div class="container d-flex justify-content-center">
-    <button class="goto_Web">Go to WebSite..</button>
+    <button class="goto_Web" onclick="return myFunction();">Go to WebSite..</button>
   </div>
 </div> 
   
@@ -250,7 +259,11 @@
   </div>
   <div class="Audio" style="display: none;">
     
-   <iframe src="img/bgSound.mp3" type="audio/mp3" id="audio" style="display:none"></iframe>
+   <audio id="audio">
+  
+  <source src="img/bgSound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
   </div>
 </section>
@@ -262,9 +275,10 @@
 <script type="text/javascript">
   function myFunction()
   {
+    document.getElementById("overlay").style.display = "none";
     var x = document.getElementById("audio");
     
-    x.resume();
+    x.play();
   } 
 </script>
     <!-- Java Script-->
